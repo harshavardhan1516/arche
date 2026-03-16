@@ -9,9 +9,11 @@ A structured project framework for building web apps with Claude Code — design
 
 ## What This Is
 
-This kit gives Claude everything it needs to understand your project deeply and work on it autonomously — from the first idea through to a live app. Instead of repeating yourself every session, Claude reads your project's context files and picks up exactly where it left off.
+This kit gives Claude everything it needs to understand your project deeply and work on it autonomously, from the first idea through to a live app. Instead of repeating yourself every session, Claude reads your project's context files and picks up exactly where it left off.
 
-Built around one principle: **you describe what you want to build, Claude figures out how to build it.**
+Planning and context is the MOST cricual aspect to building a sucessful vibecode project. It's worth spending extra time getting this part right before you commence building.
+
+Built for non-technical people and technical people alike, this framework takes away the need to deeply understand technical concepts before you start building something.
 
 ---
 
@@ -19,10 +21,8 @@ Built around one principle: **you describe what you want to build, Claude figure
 
 1. Open Claude Code in your project folder
 2. Type `/setup`
-3. Answer Claude's questions — no technical knowledge needed
-4. When setup is complete, type `/build [your first feature]`
-
-That's it.
+3. Answer Claude's questions, no technical knowledge needed
+4. When setup is complete, type `/build [your first feature]` (This framework usually proceeds automatically)
 
 ---
 
@@ -30,7 +30,7 @@ That's it.
 
 Commands in this kit are typed directly in Claude Code. How they appear depends on your setup:
 
-| In VS Code | In Claude Code CLI |
+| In VS Code/IDE | In Claude Code CLI |
 |---|---|
 | `/setup` | `/project:setup` |
 | `/build` | `/project:build` |
@@ -38,7 +38,7 @@ Commands in this kit are typed directly in Claude Code. How they appear depends 
 | `/fix` | `/project:fix` |
 | and so on... | and so on... |
 
-Both work identically — just use whichever form your environment shows. Type `/` to see all available commands listed in your setup.
+Both work identically, just use whichever form your environment shows. Type `/` to see all available commands listed in your setup.
 
 ---
 
@@ -86,7 +86,7 @@ The key moment is **browser testing** — Claude gives you a plain-English check
 
 Claude never asks "what should we do next?" It reads the task list and roadmap and tells you. Every session starts with a clear statement of what's being worked on. When a task is done, the next one begins automatically.
 
-If you close the chat and come back later, just type `/continue` — Claude will figure out exactly where things were and pick up from there without you having to explain anything.
+If you close the chat and come back later, just type `/continue`, Claude will figure out exactly where things were and pick up from there without you having to explain anything.
 
 ---
 
@@ -123,7 +123,7 @@ Claude uses a set of specialist agents behind the scenes — each focused on a s
 | `uat-guide` | Generates the plain-English browser test checklist for you to follow | Medium |
 | `context-updater` | Keeps all context files and the task list up to date after work completes | Very low |
 | `next-action` | Reads the task list and roadmap to determine what to work on next | Very low |
-| `deep-solver` | Deep investigation for complex bugs or architecture decisions. Uses the Opus model — requires your confirmation due to higher cost | High |
+| `deep-solver` | Deep investigation for complex bugs or architecture decisions. Uses the Opus model, requires your confirmation due to higher cost | High |
 
 ---
 
@@ -135,7 +135,7 @@ When you run `/build`, here's exactly what happens:
 Claude verifies the feature is within the agreed project plan before touching any code.
 
 **Step 2 — Feature spec**
-If no spec exists, Claude creates one — a breakdown of what the feature does, who uses it, the happy path, edge cases, and a task list. You review it before anything is built.
+If no spec exists, Claude creates one. A breakdown of what the feature does, who uses it, the happy path, edge cases, and a task list. You review it before anything is built.
 
 **Step 3 — Build**
 Claude works through the task list one task at a time, marking each one complete as it goes. You see real progress, not just a finished result at the end.
@@ -147,7 +147,7 @@ An automatic review checks for quality issues, security problems, and anything t
 Claude writes and runs tests. If any fail, it fixes them before continuing.
 
 **Step 6 — Browser testing** ← the human step
-Claude generates a friendly checklist of things to try in your actual browser. You follow the steps and report back. If anything looks wrong, describe it — Claude fixes it. This is the only step that requires you to do anything.
+Claude generates a friendly checklist of things to try in your actual browser. You follow the steps and report back. If anything looks wrong, describe it and Claude fixes it. This is the only step that requires you to do anything.
 
 **Step 7 — Context sync**
 All documentation is updated: task list, feature status, architecture notes, any decisions made during the build.
