@@ -11,8 +11,6 @@ Archē is a structured project framework or "meta-context" for building web apps
 
 This kit gives Claude everything it needs to understand your project deeply and work on it autonomously, from the first idea through to a live app. Instead of repeating yourself every session, Claude reads your project's context files and picks up exactly where it left off.
 
-Planning and context is the MOST cricual aspect to building a sucessful vibecode project. It's worth spending extra time getting this part right before you commence building.
-
 Built for non-technical people and technical people alike, this framework takes away the need to deeply understand technical concepts before you start building something.
 
 ---
